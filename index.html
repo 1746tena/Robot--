@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Robot Cookie Game</title>
+  <link rel="stylesheet" href="robot.css">
+</head>
+<body>
+
+<h2>🤖 Robot Cookie Mission</h2>
+
+<div id="grid">
+  <div id="robot"></div>
+  <div id="cookie"></div>
+</div>
+
+<div class="controls">
+  <button onclick="move('up')">⬆️</button>
+  <button onclick="move('left')">⬅️</button>
+  <button onclick="move('down')">⬇️</button>
+  <button onclick="move('right')">➡️</button>
+</div>
+
+<div id="winMessage">
+  🎉 You Win! Cookie Collected 🍪
+  <br><br>
+  <button onclick="restartGame()">🔄 Play Again</button>
+</div>
+
+<script src="robot.js"></script>
+</body>
+</html>
